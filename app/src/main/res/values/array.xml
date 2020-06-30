@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entradas">
+        <item>Operativo, en optimas condiciones</item>
+        <item>Operativo, requiere reparación</item>
+        <item>No operativo, requiere reparacion</item>
+        <item>No operativo, requiere reposición</item>
+    </string-array>
+
+    <string-array name="labs">
+        <item>LC_BP</item>
+        <item>LT_BP</item>
+    </string-array>
+</resources>

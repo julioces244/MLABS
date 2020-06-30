@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstrumentosActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_skill_innovation1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/fragment_bot"
+            android:layout_width="match_parent"
+            android:layout_height="85dp">
+
+            <!-- TODO: Update blank fragment layout -->
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:alpha="0.8"
+                app:cardBackgroundColor="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_gradient1"
+                    android:layout_margin="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="#FFF"
+                        android:text="Lista de Instrumentos"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/texto_question1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/fragment_bot"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+
+            <com.google.android.material.card.MaterialCardView
+                app:strokeColor="@color/colorPrimaryDark"
+                app:strokeWidth="3dp"
+                android:alpha="0.1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+                    android:background="@drawable/bg_gradient1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/cv_tittle_innovation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <TextView
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginStart="20dp"
+                            android:textColor="#000000"
+                            android:text="¿Cual es el estado actual de cada instrumento? "
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:id="@+id/txt_innovation_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/texto_question1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+                    <Button
+                        android:id="@+id/btn_instrumento"
+                        android:layout_width="100dp"
+                        android:text="Siguiente"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_button"
+                        android:layout_below="@+id/recycler"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="20dp" />
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:alpha="0.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@drawable/bg_gradient1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
